@@ -1,0 +1,76 @@
+@media (max-width: 1025px) {
+
+    .container {
+        display: flex;
+        text-align: center;
+    }
+
+    .imagem-padrao p {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .paragrafo {
+        font-size: 1.4rem;
+    }
+
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .botao {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+@media (min-width: 2559px){
+
+    body {
+        margin: 0 auto 0 7rem;
+    }
+
+    .titulo{
+        font-size: 5.5rem;
+        margin-bottom: 8rem;
+    }
+
+    .paragrafo {
+        font-size: 2.3rem;
+        line-height: 4rem;
+        width: 63rem;
+    }
+
+    .botoes {
+        width: 100vw;
+    }
+
+    .container {
+        width: 90rem;
+    }
+}
+
+@media (max-width: 1348px){
+    .informacoes {
+        padding-left: 2.2rem;
+        padding-right: 2.2rem;
+        
+    }
+
+    .paragrafo {
+        height: 34rem;
+    }
+
+    .titulo {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 321px){
+    .titulo{
+        margin-top: 7rem;
+    }
+    
+}

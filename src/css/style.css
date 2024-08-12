@@ -1,0 +1,106 @@
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.carrossel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.informacoes {
+    display: none;
+}
+
+.imagem-invertida {
+    transform: scalex(-1)
+}
+
+.imagem {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    
+}
+
+.ativa {
+    display: block;
+    animation: mudarImagem 1.0s;
+    
+}
+
+.imagem-padrao {
+    display: block;
+}
+
+.titulo {
+    font-family: 'GOT';
+    font-size: 3.3rem;
+    color: #ffffff;
+    margin-top: 9rem;
+    margin-bottom: 5rem;
+    letter-spacing: 0.8rem;
+}
+
+.paragrafo {
+    font-family: 'Poppins';
+    color: #ffffff;
+    width: 49%;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    height: 29rem;
+    overflow: auto;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.botao {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    border: solid transparent;
+    cursor: pointer;
+    border-color: #ffffff
+}
+
+.botao-padrao {
+    background-color: #1d8346;
+}
+
+@keyframes mudarImagem {
+    from{ 
+        opacity: 0.65;
+    }to{
+        opacity: 1.5;
+    }
+}
+
+main::after{
+    content: "";
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%);
+    z-index: -1;
+    transform: scalex(-1)
+}
