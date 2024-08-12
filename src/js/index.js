@@ -13,8 +13,8 @@ botoesCarrossel.forEach((botao, indice) => {
         imagemSelecionada.classList.remove("ativa")
         imagens[indice].classList.add("ativa")
 
-        const informacaoAtiva = document.querySelector(".imagem-padrao")
-        informacaoAtiva.classList.remove("imagem-padrao")
-        parteEscrita[indice].classList.add("imagem-padrao")
+        const informacaoAtiva = document.querySelector(".texto-padrao")
+        informacaoAtiva.classList.remove("texto-padrao")
+        parteEscrita[indice].classList.add("texto-padrao")
     })
 })
