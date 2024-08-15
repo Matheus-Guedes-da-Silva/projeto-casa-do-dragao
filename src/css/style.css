@@ -11,6 +11,8 @@ body {
     width: 100%;
     z-index: -1;
     overflow: hidden;
+    background-size: cover;
+    object-fit: cover;
 }
 
 .container {
@@ -32,8 +34,7 @@ body {
 .imagem {
     width: 100vw;
     height: 100vh;
-    display: none;
-    
+    display: none; 
 }
 
 .ativa {
